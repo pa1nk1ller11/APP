@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wind-tunnel-control"
+version = "0.1.0"
+description = "Windows desktop control app for an Arduino Mega wind tunnel controller."
+requires-python = ">=3.10"
+dependencies = [
+    "pyserial>=3.5,<4",
+]
+
+[project.gui-scripts]
+wind-tunnel-control = "wind_tunnel_control.app:main"
